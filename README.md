@@ -6,9 +6,10 @@ A Flask web application to create Google Calendar events from plaintext inputs. 
 
 ### Features
 
- - User authentication using Google OAuth2. Fetches a list of user's
- - Google Calendars. Input events as plain text and convert it to a
- - Google Calendar event. Extracts date and time information from plain text using Spacy and Dateparser.
+ - User authentication using Google OAuth2. 
+ - Fetches a list of user's Google Calendars. 
+ - Input events as plain text and convert it to a Google Calendar event. 
+ - Extracts date and time information from plain text using Spacy and Dateparser.
  - Automatically detects the user's timezone using IP address.
 
 ### Getting Started
