@@ -81,3 +81,5 @@ $('logoutBtn').addEventListener('click', async () => {
 
 // Check authentication status on load
 checkAuth();
+
+// Fin
