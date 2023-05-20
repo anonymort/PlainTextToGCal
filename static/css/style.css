@@ -1,0 +1,12 @@
+.hide-element {
+    display: none;
+}
+
+.reduced-img {
+    width: 75%;
+    height: auto;
+}
+
+.hidden {
+    display: none;
+}

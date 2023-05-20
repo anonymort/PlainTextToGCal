@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: en-ud-model-sm
+Version: 1.1.0
+Summary: ud based model for spacy.
+Home-page: https://github.com/allenai/spaCy-trained-UD-model
+Author: aryehgigi
+Author-email: aryehgigi@gmail.com
+License: apache 2.0
+Platform: UNKNOWN
+Requires-Dist: spacy (>=2.2.2)
+
+UNKNOWN
+
+

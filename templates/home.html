@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plain Text to Google Calendar</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.1.4/dist/tailwind.min.css">
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+
+<body class="bg-gray-100 font-sans leading-normal tracking-normal">
+    <nav class="bg-white shadow">
+        <div class="container mx-auto px-6 py-3 md:flex md:justify-between md:items-center">
+            <div>
+                <a class="text-gray-800 text-xl font-bold md:text-2xl hover:text-gray-700" href="#">Plain Text to Google Calendar</a>
+            </div>
+            <div>
+                <a href="https://www.buymeacoffee.com/mattkneale" target="_blank" rel="noopener noreferrer">
+                    <img src="/static/images/bmc-full-logo-no-background%20(1)%20(1).png" alt="Buy Me A Coffee" class="reduced-img" />
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container mx-auto mt-10">
+        <div class="bg-white rounded shadow-md max-w-md mx-auto p-6">
+            <div class="flex justify-center mb-4">
+                <button id="googleAuthBtn" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mx-auto">Authenticate with Google</button>
+            </div>
+            <div id="formContainer" style="display: none;">
+                <div class="form-group mb-4">
+                    <label for="calendarSelect" class="block text-gray-700 text-sm font-bold mb-2">Select Calendar:</label>
+                    <select id="calendarSelect" class="form-control shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"></select>
+                </div>
+                <div class="form-group mb-4">
+                    <label for="eventText" class="block text-gray-700 text-sm font-bold mb-2">Event Text (Format: Title HH:MM DD/MM/YY)</label>
+                    <input type="text" id="eventText" class="form-control shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                </div>
+                <div class="flex items-center justify-between">
+                    <button id="submitEvent" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">Submit</button>
+                    <button id="logoutBtn" class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded hide-element">Logout</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="w-full text-center border-t p-4 pin-b bg-transparent mt-8">
+        <p>2023 - <a href="https://linktr.ee/mattkneale">Matt Kneale</a> - Version 0.1.0</p>
+    </footer>
+
+    <script src="/static/js/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/luxon@2.0.2/build/global/luxon.min.js"></script>
+</body>
+
+</html>
